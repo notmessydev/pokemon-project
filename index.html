@@ -4,11 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pokedex API Project</title>
-    <link rel="stylesheet" href="styles">
+    <title>Random Pokemon</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <h3>Pokemon</h3>
+    <div class="input-container">
+        
+        <button><p>Summon Next Pokemon</p></button>
+    </div>
+    <section class="container">
+        <div class="pokemon-title">
+        <h1>Ditto</h1> <p class="pokemon-id">#132</p>
+        </div>
+        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/132.png" alt="Pokemon">
+        <p id="type">Type: Normal</p>
+        <p id="description"></p>
+    </section>
+    <!-- <div class="right">
+        <h2>Stats</h2>
+        <ul id="stats">
+            <li>hp: 48</li>
+            <li>attack: 48</li>
+            <li>defense: 48</li>
+            <li>special-attack: 48</li>
+            <li>special-defense: 48</li>
+            <li>speed: 48</li>
+        </ul>
+    </div> -->
     
 
     <script src="main.js"></script>
