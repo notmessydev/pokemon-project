@@ -6,13 +6,12 @@
     font-family: 'Rubik', sans-serif;
 }
 
-h1 {
+h1, h2{
     font-size: 3rem;
-    color: white;
-}
-
-h2 {
-    font-size: 3rem;
+    background: linear-gradient(to right, #ff0000,
+    #c81818);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 }
 
 
@@ -57,7 +56,7 @@ input {
 
 button {
     padding: 2em;
-    background-color: rgb(255, 0, 0);
+    background-color: #ff0000;
     color: white;
     border-radius: 5px;
     
@@ -67,17 +66,16 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 5px;
+    gap: 10px;
 }
 
 ul {
     list-style-type: none;
 }
 
-/* .right {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-} */
+.right {
+    position: absolute;
+    top: 2%;
+    right: 5%;
+}
 

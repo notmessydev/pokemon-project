@@ -15,7 +15,7 @@ function getFetch(){
         })
 
         const pokemonStats = data.stats.map(i => {
-          let statName = i.stat.name
+          let statName = i.stat.name.charAt(0).toUpperCase() + i.stat.name.slice(1)
           let statValue = i.base_stat
           return `${statName}: ${statValue} `
         })
@@ -26,15 +26,15 @@ function getFetch(){
         document.querySelector('#type').innerHTML = `Type: ${pokemonType.join(' | ')}`
         // document.querySelector('#description').innerHTML = data.species.url
         
-        // const currentStats = document.querySelectorAll('li')
-        // currentStats.forEach(stat => stat.remove());
+        const currentStats = document.querySelectorAll('li')
+        currentStats.forEach(stat => stat.remove());
 
-        // pokemonStats.forEach(stat => {
-        //   let statList = document.createElement('li')
-        //   statList.innerText = stat
-        //   document.querySelector('#stats').appendChild(statList)
+        pokemonStats.forEach(stat => {
+          let statList = document.createElement('li')
+          statList.innerText = stat
+          document.querySelector('#stats').appendChild(statList)
 
-        // })
+        })
       })
       .catch(err => {
           console.log(`error ${err}`)
