@@ -79,3 +79,10 @@ ul {
     right: 5%;
 }
 
+@media all and (max-width: 980px) {
+    .input-container {
+        position: absolute;
+        top: 2%;
+        left: 5%;
+    }
+}
